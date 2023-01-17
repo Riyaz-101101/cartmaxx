@@ -1,0 +1,337 @@
+body
+{
+	background-color: rgb(191,138,134);
+	background-size: cover;
+}
+header
+{
+	height:10%;
+	width:100%;
+	padding: 0 8%;
+	background: red;
+	position: relative;
+	flex-wrap: wrap;
+
+}
+#search
+{
+	position: absolute;
+	left:30%;
+	top:60%;
+	width:90%;
+	max-width:900px;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	color:#fff;
+}
+#search button
+{
+	padding:3px 0;
+	background:yellow;
+	color:#f0ffff;
+	padding:3px 10px;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+
+}
+#search button a
+{
+	display: inline-block;
+	margin: 0 10px;
+
+}
+#search button a
+{
+	text-decoration:none;
+	color:#fff;
+	padding: 2px 0;
+	position: relative;
+
+}
+#search button a::after
+{
+	content:"";
+	background:#ff3d00;
+	width:100%;
+	height:2px;
+	position: absolute;
+	bottom:0;
+	left:0;
+	transition:width 0.5s;
+}
+#search button a:hover::after
+{
+	width:100%;
+}
+nav 
+{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+
+}
+.link
+{
+	position: absolute;
+	left:60%;
+	top:60%;
+	width:90%;
+	max-width:900px;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	color:#fff;
+}
+
+.link button
+{
+	padding:3px 0;
+	background:blue;
+	color:#f0ffff;	
+    text-align: center;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+
+}
+.link button a
+{
+	display: inline-block;
+	text-decoration:none;
+	text-align: center;
+	color:#fff;
+	padding: 5px 10px;
+	position: relative;
+}
+.link button a::after
+{
+	content:"";
+	background:#ff3d00;
+	width:100%;
+	height:2px;
+	position: absolute;
+	bottom:0;
+	left:0;
+	transition:width 0.5s;
+}
+.link button a:hover
+{
+	width:100%;
+	background-color: yellow;
+}
+.link 
+{
+	padding:2px 0;
+}
+.link li
+{
+	display: inline-block;
+	margin-top:10px; 
+	margin-bottom:30px;
+	margin-right:20px; 
+	margin-left:100px; 
+}
+.link li a
+{
+ 	text-decoration:none;
+ 	color:#fff;
+	padding: 5px 0;
+	position: relative;
+}
+.link li a::after
+{
+	content:"";
+	background:#ff3d00;
+	width:100%;
+	height:2px;
+	position: absolute;
+	bottom:0;
+	left:0;
+	transition:width 0.5s;
+}
+.link li a:hover::after
+{
+ 	width:100%;
+ 	border-radius: 5px;
+ 	background-color: yellow;
+}
+.logo h1
+{
+	text-align: center;
+}
+.cart
+{
+	width:100px;
+	height: 50%;
+	padding-top:-20px;
+	margin-left:-450px;
+	padding-bottom:10px;
+	position:fixed;
+}
+.image
+{
+	display: fixed;
+	background-image: url("image1.webp");
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position:relative;
+}
+.logo
+{
+	text-align: center;
+	font-size: 30;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	color:white;
+}
+.grid
+{
+	display: grid;
+	grid-row-gap: 200px;
+	grid-column-gap: 30px;
+	grid-template-columns: auto  auto  auto;
+	background-color:#2196F3;
+	padding:10px;
+}
+.phones
+{
+	background-color:rgba(255,255,255,0.8);
+	border:1px solid rgba(0,0,0,0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+.electronics
+{
+	background-color:rgba(255,255,255,0.8);
+	border:1px solid rgba(0,0,0,0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+.accessories
+{
+	background-color:rgba(255,255,255,0.8);
+	border:1px solid rgba(0,0,0,0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+.phones img
+{
+	width: 300px;
+	border-radius: 30px;
+
+}
+.electronics img
+{
+	width:300px;
+	border-radius: 20px;
+
+}
+.accessories img
+{
+	width: 250px;
+	border-radius: 30px;
+
+}
+.phones p a
+{
+	text-decoration: none;
+	font-size: 30;
+	text-align: center;
+	color: green;
+
+}
+.electronics p a
+{
+	text-decoration: none;
+	font-size: 30;
+	color: green;
+	text-align: center;
+
+}
+.accessories p a
+{
+	text-decoration: none;
+	font-size: 30;
+	text-align: center;
+	color: green;
+
+}
+.phones p a:hover
+{
+	width: 100%;
+	background-color: yellow;
+}
+.grid img a:hover
+{
+	width: 200%
+	background-color:red;
+
+}
+.electronics p a:hover
+{
+	width: 100%;
+	background-color: yellow;
+}
+.accessories p a:hover
+{
+	width: 100%;
+	background-color: yellow;
+}
+footer
+{
+	flex-shrink: 0;
+	height: 50px;
+	width:100%;
+	background-color: grey;
+	line-height: 60px;
+	text-align: center;
+	color:#fff;
+
+}
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+.content
+{
+	display: none;
+	position: relative;
+	background-color: orange;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.content a
+{
+	color: black;
+	padding:12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.content a:hover
+{
+	background-color: lightred;
+}
+.dropdown:hover .content
+{
+	display: block;
+}
+.dropdown:hover #signin 
+{
+	background-color: grey;
+}
+.container h1 h3
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 200px;
+	padding-top: 20px;
+}
